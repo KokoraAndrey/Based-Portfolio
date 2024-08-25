@@ -1,0 +1,71 @@
+.hero {
+    &__wrapper {
+        position: relative;
+        display: flex;
+    }
+
+    &__content {
+        margin-top: 130px;
+        max-width: 600px;
+    }
+
+    &__title {
+        font-size: 48px;
+        color: $black-color;
+        margin-bottom: 32px;
+
+        &--bold {
+            font-weight: 800;
+        }
+
+        &--outline {
+            font-weight: 800;
+            color: $white-color;
+            text-shadow: -1px -1px 0 #000, 0 -1px 0 #000, 1px -1px 0 #000,
+                1px 0 0 #000, 1px 1px 0 #000, 0 1px 0 #000, -1px 1px 0 #000,
+                -1px 0 0 #000;
+            letter-spacing: -0.02em;
+        }
+    }
+
+    &__discription {
+        margin-bottom: 100px;
+    }
+
+    &__social {
+        display: flex;
+        align-items: center;
+        gap: 32px;
+    }
+
+    &__item {
+        width: 56px;
+        height: 56px;
+        border: 2px solid $black-color;
+        border-radius: 4px;
+        padding: 16px;
+
+        transition: background-color 0.2s;
+
+        &:hover {
+            background-color: $black-color;
+
+            svg {
+                path {
+                    fill: $white-color;
+                }
+            }
+        }
+    }
+
+    &__image {
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-image: url('../../img/hero/man.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 875px;
+        height: 596px;
+    }
+}

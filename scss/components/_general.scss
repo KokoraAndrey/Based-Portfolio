@@ -1,0 +1,13 @@
+body {
+    font-family: 'Sora', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: $zinc-500-color;
+}
+
+.container {
+    width: 100%;
+    max-width: calc($container-width + 32px);
+    padding: 0 16px;
+    margin: 0 auto;
+}
