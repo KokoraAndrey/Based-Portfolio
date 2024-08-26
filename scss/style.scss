@@ -2,8 +2,10 @@
 @import './components/fonts';
 @import './components/general';
 @import './components/extends';
+@import './components/mixins';
 
 // Blocks
 
 @import './blocks/header';
 @import './blocks/hero';
+@import './blocks/skills';
