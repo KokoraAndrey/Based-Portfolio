@@ -106,6 +106,7 @@ body {
 .hero__wrapper {
   position: relative;
   display: flex;
+  padding-bottom: 116px;
 }
 .hero__content {
   margin-top: 130px;
@@ -115,6 +116,7 @@ body {
   font-size: 48px;
   color: #000;
   margin-bottom: 32px;
+  line-height: 150%;
 }
 .hero__title--bold {
   font-weight: 800;
@@ -139,6 +141,7 @@ body {
   border: 2px solid #000;
   border-radius: 4px;
   padding: 16px;
+  cursor: pointer;
   transition: background-color 0.2s;
 }
 .hero__item:hover {
