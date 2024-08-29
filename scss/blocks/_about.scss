@@ -1,0 +1,55 @@
+.about {
+    &__wrapper {
+        padding: 60px 0 100px 0;
+        display: flex;
+        gap: 81px;
+    }
+
+    &__img {
+        width: 100%;
+        max-width: 525px;
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-image: url('../../img/about/man.png');
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 100%;
+            max-width: 525px;
+            height: 572px;
+        }
+    }
+
+    &__content {
+        width: 100%;
+        max-width: 610px;
+    }
+
+    &__title {
+        @include Title($black-color, start);
+        margin-bottom: 40px;
+        margin-top: 20px;
+    }
+
+    &__description {
+        & span {
+            display: block;
+            &:not(:last-child) {
+                margin-bottom: 30px;
+            }
+        }
+    }
+
+    &__description--first {
+    }
+
+    &__description--second {
+    }
+
+    &__description--third {
+    }
+}

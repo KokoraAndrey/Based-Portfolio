@@ -33,7 +33,7 @@ body {
   border-radius: 4px;
 }
 
-.experience__title, .skills__title {
+.about__title, .experience__title, .skills__title {
   font-size: 48px;
 }
 
@@ -312,6 +312,48 @@ body {
 .experience__description {
   line-height: 150%;
   color: #d4d4d8;
+}
+
+.about__wrapper {
+  padding: 60px 0 100px 0;
+  display: flex;
+  gap: 81px;
+}
+.about__img {
+  width: 100%;
+  max-width: 525px;
+  position: relative;
+}
+.about__img::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url("../../img/about/man.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  max-width: 525px;
+  height: 572px;
+}
+.about__content {
+  width: 100%;
+  max-width: 610px;
+}
+.about__title {
+  color: #000;
+  text-align: start;
+  margin-bottom: 40px;
+  margin-top: 20px;
+}
+.about__title--bold {
+  font-weight: 800;
+}
+.about__description span {
+  display: block;
+}
+.about__description span:not(:last-child) {
+  margin-bottom: 30px;
 }
 
 /*# sourceMappingURL=style.css.map */
