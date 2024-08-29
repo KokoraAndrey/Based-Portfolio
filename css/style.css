@@ -194,7 +194,8 @@ body {
   align-items: center;
 }
 .skills__img {
-  margin-bottom: 32px;
+  padding-bottom: 32px;
+  margin: auto 0;
 }
 .skills__name {
   font-size: 20px;
