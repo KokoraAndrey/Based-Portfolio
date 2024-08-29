@@ -24,11 +24,41 @@
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
+        transition: all 0.3s ease;
+        cursor: pointer;
+
+        &:hover {
+            background-color: $black-color;
+
+            div {
+                svg {
+                    path {
+                        fill: $white-color;
+                    }
+
+                    path:not(:first-child) {
+                        fill: $black-color;
+                    }
+                }
+            }
+
+            span {
+                color: $white-color;
+            }
+        }
     }
 
     &__img {
         padding-bottom: 32px;
         margin: auto 0;
+
+        &:hover {
+            svg {
+                path {
+                    fill: $white-color;
+                }
+            }
+        }
     }
 
     &__name {

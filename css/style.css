@@ -4,11 +4,21 @@ body {
   font-size: 16px;
   font-weight: 400;
   color: #71717a;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .container {
   width: 100%;
   max-width: 1250px;
+  padding: 0 16px;
+  margin: 0 auto;
+}
+
+.container-small {
+  width: 100%;
+  max-width: 1200px;
   padding: 0 16px;
   margin: 0 auto;
 }
@@ -21,6 +31,19 @@ body {
   line-height: 120%;
   letter-spacing: 0.02em;
   border-radius: 4px;
+}
+
+.experience__title, .skills__title {
+  font-size: 48px;
+}
+
+.experience__header--apple::before, .experience__header--youtube::before, .experience__header--google::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 32px;
+  height: 32px;
 }
 
 .header__wrapper {
@@ -129,6 +152,7 @@ body {
 }
 .hero__discription {
   margin-bottom: 100px;
+  letter-spacing: 0.02em;
 }
 .hero__social {
   display: flex;
@@ -159,6 +183,135 @@ body {
   background-position: center;
   width: 875px;
   height: 596px;
+}
+
+.skills__wrapper {
+  padding-bottom: 100px;
+}
+.skills__title {
+  color: #000;
+  text-align: center;
+  margin-bottom: 80px;
+}
+.skills__title--bold {
+  font-weight: 800;
+}
+.skills__list {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  column-gap: 71.5px;
+  row-gap: 40px;
+}
+.skills__item {
+  border: 2px solid #000;
+  border-radius: 4px;
+  padding: 37px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.skills__item:hover {
+  background-color: #000;
+}
+.skills__item:hover div svg path {
+  fill: #fff;
+}
+.skills__item:hover div svg path:not(:first-child) {
+  fill: #000;
+}
+.skills__item:hover span {
+  color: #fff;
+}
+.skills__img {
+  padding-bottom: 32px;
+  margin: auto 0;
+}
+.skills__img:hover svg path {
+  fill: #fff;
+}
+.skills__name {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 120%;
+  text-transform: capitalize;
+  text-align: center;
+  color: #000;
+}
+
+.experience__inner {
+  margin: 0 auto;
+  background-color: #000;
+}
+.experience__wrapper {
+  padding: 80px 0 100px 0;
+}
+.experience__title {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 100px;
+}
+.experience__title--bold {
+  font-weight: 800;
+}
+.experience__item {
+  border: 1px solid #71717a;
+  border-radius: 10px;
+  padding: 30px 24px;
+  width: 100%;
+  max-width: 1168px;
+  height: 192px;
+  transition: all 0.3s ease;
+}
+.experience__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+.experience__item:hover {
+  background-color: #27272a;
+  border-color: #27272a;
+}
+.experience__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 28px;
+  position: relative;
+}
+.experience__header--google {
+  background-image: url("../../img/experience/google.svg");
+  background-repeat: no-repeat;
+  background-position: left;
+}
+.experience__header--youtube {
+  background-image: url("../../img/experience/youtube.svg");
+  background-repeat: no-repeat;
+  background-position: left;
+}
+.experience__header--apple {
+  background-image: url("../../img/experience/apple.svg");
+  background-repeat: no-repeat;
+  background-position: left;
+}
+.experience__name {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 117%;
+  letter-spacing: -0.02em;
+  color: #fff;
+  margin-left: 62px;
+}
+.experience__date {
+  font-weight: 600;
+  line-height: 125%;
+  letter-spacing: -0.02em;
+  color: #d4d4d8;
+}
+.experience__description {
+  line-height: 150%;
+  color: #d4d4d8;
 }
 
 /*# sourceMappingURL=style.css.map */

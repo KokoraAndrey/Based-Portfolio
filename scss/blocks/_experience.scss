@@ -1,0 +1,72 @@
+.experience {
+    &__inner {
+        margin: 0 auto;
+        background-color: $black-color;
+    }
+    &__wrapper {
+        padding: 80px 0 100px 0;
+    }
+
+    &__title {
+        @include Title($white-color, center);
+        margin-bottom: 100px;
+    }
+
+    &__item {
+        border: 1px solid $zinc-500-color;
+        border-radius: 10px;
+        padding: 30px 24px;
+        width: 100%;
+        max-width: 1168px;
+        height: 192px;
+        transition: all 0.3s ease;
+
+        &:not(:last-child) {
+            margin-bottom: 32px;
+        }
+
+        &:hover {
+            background-color: $zinc-800-color;
+            border-color: $zinc-800-color;
+        }
+    }
+
+    &__header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 28px;
+        position: relative;
+
+        &--google {
+            @include Companies-Icon('../../img/experience/google.svg');
+        }
+        &--youtube {
+            @include Companies-Icon('../../img/experience/youtube.svg');
+        }
+        &--apple {
+            @include Companies-Icon('../../img/experience/apple.svg');
+        }
+    }
+
+    &__name {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 117%;
+        letter-spacing: -0.02em;
+        color: $white-color;
+        margin-left: 62px;
+    }
+
+    &__date {
+        font-weight: 600;
+        line-height: 125%;
+        letter-spacing: -0.02em;
+        color: $zinc-300-color;
+    }
+
+    &__description {
+        line-height: 150%;
+        color: $zinc-300-color;
+    }
+}

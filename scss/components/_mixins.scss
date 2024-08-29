@@ -6,3 +6,10 @@
         font-weight: 800;
     }
 }
+
+@mixin Companies-Icon($link) {
+    @extend %companies-icon;
+    background-image: url($link);
+    background-repeat: no-repeat;
+    background-position: left;
+}

@@ -3,11 +3,21 @@ body {
     font-size: 16px;
     font-weight: 400;
     color: $zinc-500-color;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 .container {
     width: 100%;
     max-width: calc($container-width + 32px);
+    padding: 0 16px;
+    margin: 0 auto;
+}
+
+.container-small {
+    width: 100%;
+    max-width: calc($container-width-small + 32px);
     padding: 0 16px;
     margin: 0 auto;
 }
