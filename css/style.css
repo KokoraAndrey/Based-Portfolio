@@ -33,7 +33,7 @@ body {
   border-radius: 4px;
 }
 
-.projects__title, .about__title, .experience__title, .skills__title {
+.testimonials__title, .projects__title, .about__title, .experience__title, .skills__title {
   font-size: 48px;
 }
 
@@ -419,6 +419,86 @@ body {
 }
 .projects__img--blog {
   background-image: url(../../img/projects/projects3.jpg);
+}
+
+.testimonials__wrapper {
+  padding-top: 80px;
+}
+.testimonials__title {
+  color: #000;
+  text-align: center;
+  margin-bottom: 80px;
+}
+.testimonials__title--bold {
+  font-weight: 800;
+}
+.testimonials__list {
+  display: flex;
+  align-items: center;
+  gap: 29px;
+}
+.testimonials__item {
+  width: 100%;
+  max-width: 370px;
+  padding: 40px;
+  border-radius: 20px;
+  margin-bottom: 100px;
+  color: #404040;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+  box-shadow: 0 8px 16px -6px rgba(24, 39, 75, 0.08), 0 6px 8px -6px rgba(24, 39, 75, 0.12);
+  transition: all 0.4s ease;
+}
+.testimonials__item:hover {
+  background-color: #000;
+  color: #fff;
+}
+.testimonials__item:hover .testimonials__deviver {
+  background-color: #fff;
+}
+.testimonials__item:hover .testimonials__img circle {
+  fill: #fff;
+}
+.testimonials__item:hover .testimonials__img path {
+  fill: #000;
+}
+.testimonials__img {
+  width: 96px;
+  height: 96px;
+}
+.testimonials__img--man {
+  background-image: url(../../img/testimonials/man.png);
+}
+.testimonials__img--woman {
+  background-image: url(../../img/testimonials/wonam.png);
+}
+.testimonials__text {
+  text-align: center;
+  color: inherit;
+}
+.testimonials__deviver {
+  width: 100%;
+  max-width: 120px;
+  height: 2px;
+  background-color: #000;
+}
+.testimonials__name {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: -0.02em;
+  text-transform: capitalize;
+  color: inherit;
+}
+.testimonials__post {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 125%;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #71717a;
 }
 
 /*# sourceMappingURL=style.css.map */
