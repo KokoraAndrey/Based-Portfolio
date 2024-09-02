@@ -1,4 +1,4 @@
 # Based-Portfolio
 Practice HTML\CSS
 
-![[./Cover.]]
+![Cover](./img/Cover.jpg)
