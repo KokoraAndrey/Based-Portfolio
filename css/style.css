@@ -442,7 +442,7 @@ body {
   max-width: 370px;
   padding: 40px;
   border-radius: 20px;
-  margin-bottom: 100px;
+  margin-bottom: 180px;
   color: #404040;
   display: flex;
   flex-direction: column;
@@ -499,6 +499,127 @@ body {
   letter-spacing: -0.02em;
   text-align: center;
   color: #71717a;
+}
+
+.talk__wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 80px;
+}
+.talk__form {
+  width: 100%;
+  max-width: 500px;
+}
+.talk__buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.talk__button {
+  border-radius: 4px;
+  border: 2px solid #000;
+  padding: 16px 20px;
+  max-width: 173px;
+  height: 56px;
+  color: #fff;
+  background-color: #000;
+  transition: background-color 0.4s ease;
+}
+.talk__button:hover {
+  background-color: #404040;
+  border-color: #404040;
+}
+.talk__button:active {
+  background-color: #fff;
+  border: 2px solid #000;
+  color: #000;
+}
+.talk__link {
+  border: 2px solid #000;
+  border-radius: 4px;
+  padding: 16px;
+  width: 56px;
+  height: 56px;
+  transition: all 0.4s ease;
+}
+.talk__link:hover {
+  background-color: #000;
+}
+.talk__link:hover svg path {
+  fill: #fff;
+}
+.talk__content {
+  padding-top: 66px;
+  width: 100%;
+  max-width: 608px;
+}
+.talk__title {
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 117%;
+  letter-spacing: -0.02em;
+  color: #000;
+  margin-bottom: 20px;
+}
+.talk__title--outline {
+  color: #fff;
+  text-shadow: -1px -1px 0 #000, 0 -1px 0 #000, 1px -1px 0 #000, 1px 0 0 #000, 1px 1px 0 #000, 0 1px 0 #000, -1px 1px 0 #000, -1px 0 0 #000;
+  letter-spacing: -0.02em;
+}
+.talk__description {
+  margin-bottom: 40px;
+}
+.talk__mail {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 114%;
+  letter-spacing: -0.02em;
+  color: #000;
+  margin-bottom: 16px;
+}
+.talk__phone {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 114%;
+  letter-spacing: -0.02em;
+  color: #000;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+.form input:focus {
+  box-shadow: 0 4px 4px -2px rgba(24, 39, 75, 0.08), 0 2px 4px -2px rgba(24, 39, 75, 0.08);
+}
+.form__name {
+  border: 1.4px solid #000;
+  border-radius: 4px;
+  padding: 16px 24px;
+  height: 56px;
+}
+.form__email {
+  border: 1.4px solid #000;
+  border-radius: 4px;
+  padding: 16px 24px;
+  height: 56px;
+}
+.form__email:user-invalid {
+  border-color: #ef4444;
+}
+.form__website {
+  border: 1.4px solid #000;
+  border-radius: 4px;
+  padding: 16px 24px;
+  height: 56px;
+}
+.form__help {
+  border: 1.4px solid #000;
+  border-radius: 4px;
+  padding: 16px 24px;
+  height: 140px;
 }
 
 /*# sourceMappingURL=style.css.map */
