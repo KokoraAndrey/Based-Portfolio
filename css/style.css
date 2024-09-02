@@ -33,7 +33,7 @@ body {
   border-radius: 4px;
 }
 
-.about__title, .experience__title, .skills__title {
+.projects__title, .about__title, .experience__title, .skills__title {
   font-size: 48px;
 }
 
@@ -354,6 +354,71 @@ body {
 }
 .about__description span:not(:last-child) {
   margin-bottom: 30px;
+}
+.projects__inner {
+  background-color: #000;
+}
+.projects__wrapper {
+  padding: 60px 0 118px 0;
+}
+.projects__title {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 100px;
+}
+.projects__title--bold {
+  font-weight: 800;
+}
+.projects__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.projects__item--crypto, .projects__item--blog {
+  flex-direction: row-reverse;
+}
+.projects__item:not(:last-child) {
+  margin-bottom: 134px;
+}
+.projects__content {
+  max-width: 582px;
+}
+.projects__number {
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 117%;
+  letter-spacing: -0.02em;
+  color: #fff;
+  margin-bottom: 28px;
+}
+.projects__name {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 125%;
+  letter-spacing: -0.02em;
+  color: #fff;
+  margin-bottom: 28px;
+}
+.projects__description {
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  color: #71717a;
+  margin-bottom: 28px;
+}
+.projects__img {
+  border-radius: 19px;
+  width: 100%;
+  max-width: 530px;
+  height: 397px;
+}
+.projects__img--crypto {
+  background-image: url(../../img/projects/projects1.jpg);
+}
+.projects__img--euphoria {
+  background-image: url(../../img/projects/projects2.jpg);
+}
+.projects__img--blog {
+  background-image: url(../../img/projects/projects3.jpg);
 }
 
 /*# sourceMappingURL=style.css.map */

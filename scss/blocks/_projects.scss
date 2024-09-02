@@ -1,0 +1,82 @@
+.projects {
+    &__inner {
+        background-color: $black-color;
+    }
+    &__wrapper {
+        padding: 60px 0 118px 0;
+    }
+
+    &__title {
+        @include Title($white-color, center);
+        margin-bottom: 100px;
+    }
+
+    &__list {
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+
+        &--crypto,
+        &--blog {
+            flex-direction: row-reverse;
+        }
+        justify-content: space-between;
+
+        &:not(:last-child) {
+            margin-bottom: 134px;
+        }
+    }
+
+    &__content {
+        max-width: 582px;
+    }
+
+    &__number {
+        font-weight: 800;
+        font-size: 48px;
+        line-height: 117%;
+        letter-spacing: -0.02em;
+        color: $white-color;
+
+        margin-bottom: 28px;
+    }
+
+    &__name {
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 125%;
+        letter-spacing: -0.02em;
+        color: $white-color;
+
+        margin-bottom: 28px;
+    }
+
+    &__description {
+        line-height: 150%;
+        letter-spacing: 0.02em;
+        color: $zinc-500-color;
+        margin-bottom: 28px;
+    }
+
+    // &__link {
+    // }
+
+    &__img {
+        border-radius: 19px;
+        width: 100%;
+        max-width: 530px;
+        height: 397px;
+
+        &--crypto {
+            background-image: url(../../img/projects/projects1.jpg);
+        }
+        &--euphoria {
+            background-image: url(../../img/projects/projects2.jpg);
+        }
+        &--blog {
+            background-image: url(../../img/projects/projects3.jpg);
+        }
+    }
+}
