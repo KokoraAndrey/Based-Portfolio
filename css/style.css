@@ -1,4 +1,8 @@
 @import url(https://fonts.googleapis.com/css?family=Sora:regular,600,700,800);
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Sora", sans-serif;
   font-size: 16px;
@@ -620,6 +624,35 @@ body {
   border-radius: 4px;
   padding: 16px 24px;
   height: 140px;
+}
+
+.footer__inner {
+  background-color: #000;
+}
+.footer__wrapper {
+  padding: 24px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer__logo {
+  width: 139px;
+  height: 40px;
+}
+.footer__description {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.footer__yars, .footer__made {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 125%;
+  letter-spacing: -0.02em;
+  color: #fff;
+}
+.footer__made {
+  align-self: end;
 }
 
 /*# sourceMappingURL=style.css.map */
