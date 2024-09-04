@@ -1,5 +1,3 @@
-//TODO: Сделать якорные ссылки
-
 .header {
     &__wrapper {
         padding: 24px 0 108px 0;
@@ -14,8 +12,27 @@
 
         display: flex;
         align-items: center;
-        justify-content: space-between;
         gap: 32px;
+
+        transition: transform 0.5s ease;
+
+        @media (max-width: 730px) {
+            position: absolute;
+            top: 0;
+            left: -375px;
+            // background-color: $white-color;
+            background-color: salmon;
+
+            width: 375px;
+            height: 100%;
+            padding: 60px 60px;
+            gap: 40px;
+            flex-direction: column;
+            align-items: start;
+        }
+        &--open {
+            transform: translateX(375px);
+        }
     }
 
     &__item {
@@ -47,6 +64,10 @@
         letter-spacing: -0.02em;
         text-transform: capitalize;
         color: $black-color;
+
+        @media (max-width: 940px) {
+            font-size: 18px;
+        }
     }
 
     &__buttons {
@@ -60,23 +81,36 @@
         padding: 16px 48px 16px 20px;
         transition: background-color 0.2s ease;
 
-        &-text {
-            position: relative;
-            &::after {
-                content: '';
-                position: absolute;
-                background-image: url('../../img/header/arrow-download.svg');
-                background-repeat: no-repeat;
-                top: 50%;
-                right: -28px;
-                transform: translate(0, -50%);
-                width: 20px;
-                height: 20px;
-            }
+        position: relative;
+        z-index: 3;
+
+        &::after {
+            content: '';
+            position: absolute;
+            background-image: url('../../img/header/arrow-download.svg');
+            background-repeat: no-repeat;
+            top: 50%;
+            right: 17px;
+            transform: translate(0, -50%);
+            width: 20px;
+            height: 20px;
         }
 
         &:hover {
             background-color: $neutral-color;
+        }
+
+        @media (max-width: 940px) {
+            padding: 18px;
+
+            &::after {
+                top: 50%;
+                right: 7px;
+            }
+
+            &-text {
+                display: none;
+            }
         }
     }
 
@@ -91,9 +125,26 @@
             width: 27px;
             height: 3px;
             background-color: $black-color;
+            transition: transform 0.5s ease;
 
             &:not(:last-child) {
                 margin-bottom: 4px;
+            }
+        }
+
+        @media (max-width: 730px) {
+            display: block;
+        }
+
+        &--open {
+            span:nth-child(1) {
+                transform: translateY(9px) rotate(45deg);
+            }
+            span:nth-child(2) {
+                opacity: 0;
+            }
+            span:nth-child(3) {
+                transform: translateY(-5px) rotate(-45deg);
             }
         }
     }

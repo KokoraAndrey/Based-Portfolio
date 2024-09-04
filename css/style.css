@@ -60,8 +60,25 @@ body {
   list-style-type: none;
   display: flex;
   align-items: center;
-  justify-content: space-between;
   gap: 32px;
+  transition: transform 0.5s ease;
+}
+@media (max-width: 730px) {
+  .header__nav {
+    position: absolute;
+    top: 0;
+    left: -375px;
+    background-color: salmon;
+    width: 375px;
+    height: 100%;
+    padding: 60px 60px;
+    gap: 40px;
+    flex-direction: column;
+    align-items: start;
+  }
+}
+.header__nav--open {
+  transform: translateX(375px);
 }
 .header__item {
   position: relative;
@@ -88,6 +105,11 @@ body {
   text-transform: capitalize;
   color: #000;
 }
+@media (max-width: 940px) {
+  .header__link {
+    font-size: 18px;
+  }
+}
 .header__buttons {
   display: flex;
   align-items: center;
@@ -96,23 +118,34 @@ body {
 .header__download {
   padding: 16px 48px 16px 20px;
   transition: background-color 0.2s ease;
-}
-.header__download-text {
   position: relative;
+  z-index: 3;
 }
-.header__download-text::after {
+.header__download::after {
   content: "";
   position: absolute;
   background-image: url("../../img/header/arrow-download.svg");
   background-repeat: no-repeat;
   top: 50%;
-  right: -28px;
+  right: 17px;
   transform: translate(0, -50%);
   width: 20px;
   height: 20px;
 }
 .header__download:hover {
   background-color: #404040;
+}
+@media (max-width: 940px) {
+  .header__download {
+    padding: 18px;
+  }
+  .header__download::after {
+    top: 50%;
+    right: 7px;
+  }
+  .header__download-text {
+    display: none;
+  }
 }
 .header__burger {
   display: none;
@@ -125,9 +158,24 @@ body {
   width: 27px;
   height: 3px;
   background-color: #000;
+  transition: transform 0.5s ease;
 }
 .header__burger span:not(:last-child) {
   margin-bottom: 4px;
+}
+@media (max-width: 730px) {
+  .header__burger {
+    display: block;
+  }
+}
+.header__burger--open span:nth-child(1) {
+  transform: translateY(9px) rotate(45deg);
+}
+.header__burger--open span:nth-child(2) {
+  opacity: 0;
+}
+.header__burger--open span:nth-child(3) {
+  transform: translateY(-5px) rotate(-45deg);
 }
 
 .hero__wrapper {
@@ -653,6 +701,14 @@ body {
 }
 .footer__made {
   align-self: end;
+}
+
+main {
+  display: none;
+}
+
+footer {
+  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */
